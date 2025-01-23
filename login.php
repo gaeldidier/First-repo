@@ -7,7 +7,7 @@
 </head>
 <body>
    <center>
-   <form action="#" method="post">
+   <form action="validation.php" method="post">
         <laber>username</laber><br>
         <input type="text"><br><br>
         <laber>password</laber><br>
@@ -17,12 +17,3 @@
    </center>
 </body>
 </html>
-<?php
- include 'conn.php';
- if($_SERVER['REQUEST_METHOD'] != 'POST'){
-    echo "invalid request method!";
- }
-
- extract ($_POST);
-
- $sql=""
